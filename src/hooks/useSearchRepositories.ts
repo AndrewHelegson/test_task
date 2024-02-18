@@ -33,7 +33,7 @@ const useSearchRepositories = () => {
         },
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer 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`,
           },
         }
       );

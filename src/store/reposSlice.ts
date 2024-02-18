@@ -21,7 +21,7 @@ export const fetchRepos = createAsyncThunk(
     const response = await fetch("https://api.github.com/graphql", {
       method: "POST",
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: "Bearer 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",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ query }),
