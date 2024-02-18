@@ -14,7 +14,7 @@ export default function RepoItem({ repo }: RepoItemProps) {
   });
   return (
     <div className="repoItem_container">
-      <Link className="repoItem_link" to={`/${repo.id}`}>
+      <Link className="repoItem_link" to={`/test_task/${repo.id}`}>
         <div className="repoItem_stats">
           <h3 className="repoItem_header">{repo.name}</h3>
           <p>Дата последнего коммита: {formattedDate}</p>

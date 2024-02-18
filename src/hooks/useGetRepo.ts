@@ -46,7 +46,7 @@ const useGetRepo = () => {
         },
         {
           headers: {
-            Authorization: "Bearer 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",
+            Authorization: `Bearer ${import.meta.env.VITE_SOME_KEY}`,
           },
         }
       );

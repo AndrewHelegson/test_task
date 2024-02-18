@@ -12,9 +12,9 @@ function App() {
       <Header navigate={navigate} />
       <div className="container">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/results" element={<Results />} />
-          <Route path="/:id" element={<Repo />} />
+          <Route path="/test_task/" element={<HomePage />} />
+          <Route path="/test_task/results" element={<Results />} />
+          <Route path="/test_task/:id" element={<Repo />} />
         </Routes>
       </div>
       <Footer />

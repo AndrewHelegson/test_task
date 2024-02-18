@@ -9,17 +9,17 @@ export default function Header({ navigate }: HeaderProps) {
   const dispatch = useAppDispatch();
   const { searchRepositories } = useSearchRepositories();
   const handleClick = () => {
-    navigate("results");
+    navigate("/test_task/results");
     dispatch(setCurrentPage(1));
-    if (value.trim() === "") navigate("/");
+    if (value.trim() === "") navigate("/test_task/");
     searchRepositories(value);
     dispatch(setValue(""));
   };
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      navigate("results");
+      navigate("/test_task/results");
       dispatch(setCurrentPage(1));
-      if (value === "") navigate("/");
+      if (value === "") navigate("/test_task/");
 
       searchRepositories(value);
 
